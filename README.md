@@ -1,5 +1,8 @@
 # SecretTrace AI — Find the secrets Git forgot.
 
+
+Video Demo : https://www.youtube.com/watch?v=QIyEhNhDRXc
+
 [![Security Scan](https://github.com/alwaysalearner1234/Hallucination_hunter/actions/workflows/secrettrace.yml/badge.svg)](https://github.com/alwaysalearner1234/Hallucination_hunter/actions/workflows/secrettrace.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
