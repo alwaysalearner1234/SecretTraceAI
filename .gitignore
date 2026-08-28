@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database
+*.db
+secrettrace.db
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Node/Vite build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and miscellaneous
+.vscode/
+.idea/
+.pytest_cache/
+scratch/
+browser/
+*.log

@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./secrettrace.db
+      # Optional: Add GEMINI_API_KEY here to enable advanced LLM classification
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    volumes:
+      - backend-data:/app
+    restart: always
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  backend-data:
